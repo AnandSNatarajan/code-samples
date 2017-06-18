@@ -7,31 +7,31 @@ print(dir(my_list))
 # Creation and access of elements                                       #
 #########################################################################
 # Create a new list
-print("\nExample 1")
+print("\nExample 1.1")
 my_list = [1,2,3,4]
 print(my_list)
 del my_list
 
 # Create a new list with heterogenous elements
-print("\nExample 2")
+print("\nExample 1.2")
 my_list = [1, "chennai", "delhi"]
 print(my_list)
 del my_list
 
 # Create a nested list
-print("\nExample 3")
+print("\nExample 1.3")
 my_list = [1,2,[3,4]]
 print(my_list)
 del my_list
 
 # Access an element in the list - index based
-print("\nExample 4")
+print("\nExample 1.4")
 my_list = [1,2,3,4]
 print(my_list[1])
 del my_list
 
 # Access an element in the nested list
-print("\nExample 5")
+print("\nExample 1.5")
 my_list = [[1,2],[3,4]]
 print(my_list[1][1])
 del my_list
@@ -39,7 +39,7 @@ del my_list
 # Access an element in the list - negative index
 # -1 prints last element in list, -2 second last and so on
 # Provind a number more than the elements of the list will cause an error.
-print("\nExample 6")
+print("\nExample 1.6")
 my_list = [1,2,3,4]
 print(my_list[-1])
 print(my_list[-4])
@@ -47,7 +47,7 @@ del my_list
 
 # List slicing - print elements in a particular range of the list and change them
 # Will not include the last index in the range specified.
-print("\nExample 7")
+print("\nExample 1.7")
 my_list = [1,2,3,4]
 print(my_list[2:4])
 my_list[2:4] = [6,7]
@@ -55,19 +55,19 @@ print(my_list)
 del my_list
 
 # len() : Get the length of a list
-print("\nExample 9")
+print("\nExample 1.8")
 my_list = [3,4,5]
 print(my_list.__len__())
 del my_list
 
 # count() : Return number of occurences of a value
-print("\nExample 1.10")
+print("\nExample 1.9")
 my_list = [2,3,2,4,2,5]
 print(my_list.count(2))
 del my_list
 
 # index() : Return index at which the value exists
-print("\nExample 1.11")
+print("\nExample 1.10")
 my_list = [1,2,3,2,4,2,5]
 print(my_list.index(2))
 # Print first occurence in a particular range
@@ -126,7 +126,7 @@ print(my_list)
 del my_list
 
 #########################################################################
-# Return a differen list with the operation                             #
+# Return a different list with the operation                            #
 #########################################################################
 # reverse() : In place reverse of a list
 print("\nExample 3.1")
@@ -136,5 +136,11 @@ print(my_list1)
 del my_list
 del my_list1
 
+# clear() : Remove all elements from a list
+print("\nExample 3.2")
+my_list = [3,4,5]
+my_list.clear()
+print(my_list)
+del my_list
 
 help(list)
